@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typing Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-xl text-center">
+    <h1 class="text-3xl font-bold mb-6">Typing Test</h1>
+    <div id="quote" class="text-xl mb-6 text-gray-700"></div>
+    <textarea id="input" class="w-full h-32 p-4 border-2 rounded-xl focus:outline-none focus:border-blue-500" placeholder="Start typing here..." disabled></textarea>
+    <div class="mt-6 space-y-2">
+      <div id="timer" class="text-lg">Time: 0s</div>
+      <div id="wpm" class="text-lg">WPM: 0</div>
+      <div id="accuracy" class="text-lg">Accuracy: 0%</div>
+    </div>
+    <button id="startBtn" class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition">Start Test</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
